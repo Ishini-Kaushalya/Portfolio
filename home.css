@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background: linear-gradient(to top,rgb(3, 38, 47), rgba(82, 77, 187, 0.11) );
+  position: relative;
+  font-family: roboto, sans-serif;
+}
+
+.box{
+    color: white;
+  
+  
+  padding: 50px;
+  
+  background: black;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  height: 550px;
+  
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  
+}
+h1,h2,h3{
+    color: white;
+}
+
+.boxim {
+    --r: 60px; /* the radius */
+    
+    width: 250px; /* the image size */
+    aspect-ratio: 1;
+    margin: calc(tan(22.5deg)*var(--r));
+    clip-path: polygon(50% 0,100% 50%,50% 100%,0 50%) margin-box;
+    --_g:/calc(2*var(--r)) calc(2*var(--r)) 
+      radial-gradient(#000 70%,#0000 72%);
+    --_s:calc(100% - (1 - tan(22.5deg))*var(--r));
+    mask:
+      conic-gradient(#000 0 0) no-repeat 50%/var(--_s) var(--_s),
+      top var(--_g) no-repeat space,left var(--_g) space no-repeat;
+  }
+  .topnav {
+    
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #30b5da;
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #1498c8;
+  color: white;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+
+p{
+  color: aqua;
+}
+
+
+
+.background {
+  backdrop-filter: blur(45px);
+  width: 100%;
+  height: 100vh;
+  background-color:linear-gradient(to right, rgba(212, 216, 220, 0.11), rgb(54, 172, 92));
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1px;
+
+}
+  
+  
